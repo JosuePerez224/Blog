@@ -5,7 +5,7 @@ from flask_mysqldb import MySQL
 app = Flask(__name__)
 
 #Load configurations from the class "configure"
-app.config.from_object("db_conn.DevelopmentConfig")
+app.config.from_object("config.DevelopmentConfig")
 #Initialize and link the app with db
 mysqldb = MySQL(app)
 
